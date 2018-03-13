@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 触摸模式下单击时的背景图片-->  
+	<item 
+	    android:state_focused="false" 
+		android:state_pressed="true" >
+		<!--2个图片的叠加-->     
+		<layer-list>
+			<!--图片1-->
+			<item >  
+				<color android:color="@color/Green"/>
+			</item>
+			<!--图片2-->
+			<item>
+				<bitmap 
+            		android:src="@drawable/keyboard_delete" />     
+			</item> 
+		</layer-list> 
+	</item>
+
+	<!-- 默认时的背景图片-->  
+	<item>    
+		<layer-list>
+			<!--图片1-->
+			<item >  
+				<color android:color="@color/White"/>
+			</item> 
+			<!--图片2-->
+			<item>
+				<bitmap 
+            		android:src="@drawable/keyboard_delete" />     
+			</item>  
+		</layer-list>      
+	</item>
+</selector>
